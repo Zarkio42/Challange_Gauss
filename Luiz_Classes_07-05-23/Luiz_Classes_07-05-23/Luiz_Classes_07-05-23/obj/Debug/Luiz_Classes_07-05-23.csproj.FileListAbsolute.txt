@@ -1,0 +1,8 @@
+C:\Users\curso.ads2\Desktop\Pedro Clones\Challange_Gauss\Luiz_Classes_07-05-23\Luiz_Classes_07-05-23\Luiz_Classes_07-05-23\bin\Debug\Luiz_Classes_07-05-23.exe.config
+C:\Users\curso.ads2\Desktop\Pedro Clones\Challange_Gauss\Luiz_Classes_07-05-23\Luiz_Classes_07-05-23\Luiz_Classes_07-05-23\bin\Debug\Luiz_Classes_07-05-23.exe
+C:\Users\curso.ads2\Desktop\Pedro Clones\Challange_Gauss\Luiz_Classes_07-05-23\Luiz_Classes_07-05-23\Luiz_Classes_07-05-23\bin\Debug\Luiz_Classes_07-05-23.pdb
+C:\Users\curso.ads2\Desktop\Pedro Clones\Challange_Gauss\Luiz_Classes_07-05-23\Luiz_Classes_07-05-23\Luiz_Classes_07-05-23\obj\Debug\Luiz_Classes_07-05-23.csproj.AssemblyReference.cache
+C:\Users\curso.ads2\Desktop\Pedro Clones\Challange_Gauss\Luiz_Classes_07-05-23\Luiz_Classes_07-05-23\Luiz_Classes_07-05-23\obj\Debug\Luiz_Classes_07-05-23.csproj.SuggestedBindingRedirects.cache
+C:\Users\curso.ads2\Desktop\Pedro Clones\Challange_Gauss\Luiz_Classes_07-05-23\Luiz_Classes_07-05-23\Luiz_Classes_07-05-23\obj\Debug\Luiz_Classes_07-05-23.csproj.CoreCompileInputs.cache
+C:\Users\curso.ads2\Desktop\Pedro Clones\Challange_Gauss\Luiz_Classes_07-05-23\Luiz_Classes_07-05-23\Luiz_Classes_07-05-23\obj\Debug\Luiz_Classes_07-05-23.exe
+C:\Users\curso.ads2\Desktop\Pedro Clones\Challange_Gauss\Luiz_Classes_07-05-23\Luiz_Classes_07-05-23\Luiz_Classes_07-05-23\obj\Debug\Luiz_Classes_07-05-23.pdb

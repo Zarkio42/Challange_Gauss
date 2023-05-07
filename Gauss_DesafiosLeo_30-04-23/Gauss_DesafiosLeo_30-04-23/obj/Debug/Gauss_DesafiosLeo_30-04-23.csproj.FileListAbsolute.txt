@@ -6,3 +6,11 @@ C:\Users\curso.ads2\Documents\Gauss_DesafiosLeo_30-04-23\Gauss_DesafiosLeo_30-04
 C:\Users\curso.ads2\Documents\Gauss_DesafiosLeo_30-04-23\Gauss_DesafiosLeo_30-04-23\obj\Debug\Gauss_DesafiosLeo_30-04-23.csproj.CoreCompileInputs.cache
 C:\Users\curso.ads2\Documents\Gauss_DesafiosLeo_30-04-23\Gauss_DesafiosLeo_30-04-23\obj\Debug\Gauss_DesafiosLeo_30-04-23.exe
 C:\Users\curso.ads2\Documents\Gauss_DesafiosLeo_30-04-23\Gauss_DesafiosLeo_30-04-23\obj\Debug\Gauss_DesafiosLeo_30-04-23.pdb
+C:\Users\curso.ads2\Desktop\Pedro Clones\Challange_Gauss\Gauss_DesafiosLeo_30-04-23\Gauss_DesafiosLeo_30-04-23\bin\Debug\Gauss_DesafiosLeo_30-04-23.exe.config
+C:\Users\curso.ads2\Desktop\Pedro Clones\Challange_Gauss\Gauss_DesafiosLeo_30-04-23\Gauss_DesafiosLeo_30-04-23\bin\Debug\Gauss_DesafiosLeo_30-04-23.exe
+C:\Users\curso.ads2\Desktop\Pedro Clones\Challange_Gauss\Gauss_DesafiosLeo_30-04-23\Gauss_DesafiosLeo_30-04-23\bin\Debug\Gauss_DesafiosLeo_30-04-23.pdb
+C:\Users\curso.ads2\Desktop\Pedro Clones\Challange_Gauss\Gauss_DesafiosLeo_30-04-23\Gauss_DesafiosLeo_30-04-23\obj\Debug\Gauss_DesafiosLeo_30-04-23.csproj.AssemblyReference.cache
+C:\Users\curso.ads2\Desktop\Pedro Clones\Challange_Gauss\Gauss_DesafiosLeo_30-04-23\Gauss_DesafiosLeo_30-04-23\obj\Debug\Gauss_DesafiosLeo_30-04-23.csproj.SuggestedBindingRedirects.cache
+C:\Users\curso.ads2\Desktop\Pedro Clones\Challange_Gauss\Gauss_DesafiosLeo_30-04-23\Gauss_DesafiosLeo_30-04-23\obj\Debug\Gauss_DesafiosLeo_30-04-23.csproj.CoreCompileInputs.cache
+C:\Users\curso.ads2\Desktop\Pedro Clones\Challange_Gauss\Gauss_DesafiosLeo_30-04-23\Gauss_DesafiosLeo_30-04-23\obj\Debug\Gauss_DesafiosLeo_30-04-23.exe
+C:\Users\curso.ads2\Desktop\Pedro Clones\Challange_Gauss\Gauss_DesafiosLeo_30-04-23\Gauss_DesafiosLeo_30-04-23\obj\Debug\Gauss_DesafiosLeo_30-04-23.pdb

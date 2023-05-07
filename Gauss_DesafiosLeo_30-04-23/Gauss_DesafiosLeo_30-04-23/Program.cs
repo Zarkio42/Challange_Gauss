@@ -23,11 +23,9 @@ namespace Gauss_DesafiosLeo_30_04_23
 
             Console.Read();
 
-            */
+            
 
             //FOREACH
-
-            int[] numQuery = new int[99];
 
             foreach (int num in Enumerable.Range(1, 100).Reverse())
             {
@@ -35,10 +33,67 @@ namespace Gauss_DesafiosLeo_30_04_23
             }
 
             Console.Read();
+            
+            
 
             //LINQ
 
+            //--------------------------------------------------------------------------------------------------
+            //DESAFIO MEDIO: Escreva um programa que exiba os números de 1 a 100 na tela em ordem decrescente.
+            //A CADA MULTIPLO DE 5 NÃO EXIBA O NÚMERO E SIM SEU NOME!
+            //--------------------------------------------------------------------------------------------------
 
+            for (int i = 100; i > 0; i--)
+            {
+                if (i % 5 == 0)
+                {
+                    Console.WriteLine("Pedro");
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
+            // Ou utilizando ternário => for (int i = 100; i > 0; i--)
+            // { i % 5 == 0 ? Console.WriteLine("Pedro"); : Console.WriteLine(i); }
+
+            Console.Read();
+            
+            */
+
+            //--------------------------------------------------------------------------------------------------
+            //DESAFIO DIFICIL: Escreva um programa que exiba os números de 1 a 100 na tela em ordem decrescente.
+            //A cada multiplo de 5 não exiba o número e sim o seu nome. Some todos os números pares e exiba
+            //o resultado no final do código.
+            //--------------------------------------------------------------------------------------------------
+
+            var soma = 0;
+
+            for (int i = 100; i > 0; i--)
+            {
+                if (i % 2 == 0) //Aqui ele conta até os números pares que são convertidos no meu nome!
+                {
+                    soma += i;
+                }
+
+                if (i % 5 == 0)
+                {
+                    Console.WriteLine("Pedro");
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
+            Console.WriteLine($"\n-- Soma dos números pares: {soma} --");
+
+            Console.Read();
+
+            
+
+            
 
         }
     }
