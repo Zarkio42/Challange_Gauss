@@ -21,48 +21,44 @@ namespace Luiz_Classes_07_05_23
             //Cadastro de funcionarios por setor
             //Listagem de funcionarios por setor.
 
+            Random random = new Random();
+
             Console.WriteLine("----- Bem vindo à MaxAlteirTesla -----");
             Console.WriteLine("\nComplete seu cadastro: ");
+            Console.WriteLine("\nInicialmente, digite a quantidade de funcionáros a serem cadastrados: ")
+            int.TryParse(Console.ReadLine(), out int quantidadeFuncionario)
 
             Console.ReadKey();
             Console.Clear();
 
             var list = new List<Funcionario>();
             //var funcionarios = new Funcionario();
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < quantidadeFuncionario; i++)
             {
                 var funcionarios = new Funcionario();
-                Console.WriteLine("Digite o nome");
+                Console.WriteLine("Digite o nome do funcionário: ");
                 funcionarios.nome = Console.ReadLine();
                 list.Add(funcionarios);
+                Console.Clear();
 
+                Console.WriteLine("\nDigite sua especialização: ");
+                funcionarios.especializacao = Console.ReadLine();
+                list.Add(funcionarios);
+                Console.Clear();
 
-                
+                Console.WriteLine("\nDigite o seu setor: ");
+                funcionarios.especializacao = Console.ReadLine();
+                list.Add(funcionarios);
+                Console.Clear();
+
+                Console.WriteLine("\nDigite seu salário: ");
+                double.TryParse(Console.ReadLine(), out funcionarios.salario);
+                Console.Clear();
+
+                funcionarios.numRegistro = random.Next(0, quantidadeFuncionario);
+                Console.WriteLine($"\nGeramos um Número de registro aleatório para você...");
 
             }
-
-            Console.WriteLine("1) Qual o seu nome? ");
-            //criar um for
-            funcionarios.nome = Console.ReadLine();
-
-            Console.WriteLine("2) Qual a sua especialização? ");
-            funcionarios.especializacao = Console.ReadLine();
-
-            Console.WriteLine("3) Qual a seu salário? ");
-            int.TryParse(Console.ReadLine(), out funcionarios.salario);
-
-            Console.WriteLine("4) Qual a seu salário? ");
-            int.TryParse(Console.ReadLine(), out funcionarios.salario);
-
-            Console.WriteLine("5) Qual o seu setor? ");
-            funcionarios.setor = Console.ReadLine();
-
-            //gerar numero de registro
-            var registro = 0;
-            do
-            {
-                registro++;
-            }while( registro > 0 );
 
 
             Console.WriteLine($"Seus dados {funcionarios.nome}");
