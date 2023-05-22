@@ -1,27 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Informações Nutricionais</title>
-    
-    <style>
-      *{
-        background-color: rgb(133, 128, 123);
-        color: #fff;
-      }
-      table {
-        border-collapse: collapse;
-      }
-      th,
-      td {
-        border: 1px solid black;
-        padding: 8px;
-      }
-    </style>
+
   </head>
-  <center>
-
-
-  <body>
+    <body>
     <div ><img style="width: 100%; height: 50px; object-fit: cover;" src="/Desafio/imagem/img.jpg" alt="Alimento"></div>
     <h1>Informações Nutricionais</h1>
     <form>
@@ -37,8 +24,8 @@
       <input type="number" id="calorias" name="calorias"  /><br /><br />
       <label for="quantidade">Quantidade:</label>
       <input type="number" id="quantidade" name="quantidade"  /><br /><br />
-      <button style="border: none; border-radius: 5px; background-color:aqua; padding:6px;" " type="button" onclick="salvarInformacao()">Salvar</button>
-      <button style="border: none; border-radius: 5px; background-color:aqua; padding:6px;" type="reset">Apagar</button>
+      <button id="button_save" type="button" onclick="salvarInformacao()">Salvar</button>
+      <button id="button_reset" type="reset">Apagar</button>
     </form>
 
     <h2>Informações Nutricionais</h2>
@@ -84,5 +71,4 @@
       }
     </script>
   </body>  
-</center>
 </html>

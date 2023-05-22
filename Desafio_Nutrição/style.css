@@ -1,0 +1,33 @@
+*{
+    background-color: rgb(238, 238, 238);
+    color: #000000;
+    align-items: center;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+
+  #button_save
+  {
+    border: none; 
+    border-radius: 5px; 
+    background-color:rgb(17, 134, 23); 
+    padding:6px; 
+    cursor: pointer
+  }
+
+  #button_reset
+  {
+    border: none; 
+    border-radius: 5px; 
+    background-color:rgb(253, 0, 0); 
+    padding:6px; color: #fff; 
+    cursor: pointer;
+  }
+
