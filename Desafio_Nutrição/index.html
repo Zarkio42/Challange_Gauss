@@ -9,11 +9,13 @@
 
   </head>
     <body>
-    <div ><img style="width: 100%; height: 50px; object-fit: cover;" src="/Desafio/imagem/img.jpg" alt="Alimento"></div>
+    <div>
+      <img src="/imagem/frutas.png" alt="Alimento" id="img_fundo">
+    </div>
     <h1>Informações Nutricionais</h1>
     <form>
       <label for="alimento">Alimento:</label>
-      <input type="text" id="alimento" name="alimento">
+      <input type="text" id="alimento" name="alimento" placeholder="Digite aqui seu alimento...">
       <label for="tipos_select">Tipo de Alimento</label>
       <select name="tipos_select" id="tipos_select">
         <option value="Grão">Grão</option>
@@ -21,9 +23,9 @@
         <option value="Fruta">Fruta</option>
       </select><br><br>
       <label for="calorias">Calorias:</label>
-      <input type="number" id="calorias" name="calorias"  /><br /><br />
+      <input type="number" id="calorias" name="calorias" placeholder="Digite aqui o nº de calorias..."  /><br /><br />
       <label for="quantidade">Quantidade:</label>
-      <input type="number" id="quantidade" name="quantidade"  /><br /><br />
+      <input type="number" id="quantidade" name="quantidade" placeholder="Digite a quantidade aqui..." /><br /><br />
       <button id="button_save" type="button" onclick="salvarInformacao()">Salvar</button>
       <button id="button_reset" type="reset">Apagar</button>
     </form>

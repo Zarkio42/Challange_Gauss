@@ -2,6 +2,7 @@
     background-color: rgb(238, 238, 238);
     color: #000000;
     align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   table {
@@ -31,3 +32,14 @@
     cursor: pointer;
   }
 
+  #img_fundo
+  {
+    width: 10%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  input{
+    padding: 4px;
+    border-radius: 5px;
+  }
