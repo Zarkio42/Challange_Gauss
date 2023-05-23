@@ -1,45 +1,75 @@
-*{
-    background-color: rgb(238, 238, 238);
-    color: #000000;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+* {
+  background-color: rgb(238, 238, 238);
+  color: #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  table {
-    border-collapse: collapse;
-  }
-  th,
-  td {
-    border: 1px solid black;
-    padding: 8px;
-  }
+.img_fundo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  #button_save
-  {
-    border: none; 
-    border-radius: 5px; 
-    background-color:rgb(17, 134, 23); 
-    padding:6px; 
-    cursor: pointer
-  }
+.img_fundo img{
+  width: 10%;
+  height: auto;
+}
 
-  #button_reset
-  {
-    border: none; 
-    border-radius: 5px; 
-    background-color:rgb(253, 0, 0); 
-    padding:6px; color: #fff; 
-    cursor: pointer;
-  }
+table {
+  border-collapse: collapse;
+}
 
-  #img_fundo
-  {
-    width: 10%;
-    height: auto;
-    object-fit: cover;
-  }
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
 
-  input{
-    padding: 4px;
-    border-radius: 5px;
-  }
+#button_save {
+  font-size: 14pt;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(17, 134, 23);
+  color: #fff;
+  padding: 8px;
+  cursor: pointer
+}
+
+#button_reset {
+  font-size: 14pt;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(253, 0, 0);
+  padding: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+input {
+  padding: 4px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.forms {
+  display: grid;
+  justify-content: center;
+}
+
+fieldset {
+  border-radius: 10px;
+}
+
+#tipos_select {
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background-color: #fff;
+}
+
+.tabela_ds {
+  display: grid;
+  justify-content: center;
+}
