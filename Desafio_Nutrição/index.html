@@ -5,88 +5,68 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <title>Informações Nutricionais</title>
 
 </head>
 
 <body>
-  <div class="img_fundo">
-    <img src="/imagem/frutas.png" alt="Alimento">
-  </div>
 
-  <div class="forms">
-    <fieldset>
-      <h1>Informações Nutricionais</h1>
-      <form>
-        <label for="alimento">Alimento:</label><br>
-        <input type="text" id="alimento" name="alimento" placeholder="Digite aqui seu alimento...">
-        <select name="tipos_select" id="tipos_select">
-          <option value="Grão">Grão</option>
-          <option value="Vegetal">Vegetal</option>
-          <option value="Fruta">Fruta</option>
-        </select><br><br>
-        <label for="calorias">Calorias:</label><br>
-        <input type="number" id="calorias" name="calorias" placeholder="Digite aqui o nº de calorias..." /><br /><br />
-        <label for="quantidade">Quantidade:</label><br>
-        <input type="number" id="quantidade" name="quantidade" placeholder="Digite a quantidade aqui..." /><br /><br />
-
-        <button id="button_save" type="button" onclick="salvarInformacao()">Salvar</button>
-        <button id="button_reset" type="reset">Limpar</button>
-      </form>
-    </fieldset>
+  <div class="header_">
+    <div class="img_fundo">
+      <img src="/imagem/fruta.png" alt="Alimento">
+      <h1>Nutrição</h1>
+    </div>
 
   </div>
 
-  <div class="tabela_ds">
-    <h2>Informações Nutricionais</h2>
-    <table id="tabela">
-      <tr>
-        <th>Alimento</th>
-        <th>Calorias</th>
-        <th>Gramas</th>
-        <th>Tipo</th>
-      </tr>
-    </table>
+
+  <div class="all_contetns">
+
+
+    <div class="forms">
+      <fieldset id="fieldset_input">
+        <h1>Informações Nutricionais</h1>
+        <form>
+          <label for="alimento">Alimento:</label><br>
+          <input type="text" id="alimento" name="alimento" placeholder="Digite aqui seu alimento...">
+          <select name="tipos_select" id="tipos_select">
+            <option value="null" selected>---</option>
+            <option value="Grão">Grão</option>
+            <option value="Vegetal">Vegetal</option>
+            <option value="Fruta">Fruta</option>
+          </select><br><br>
+          <label for="calorias">Calorias:</label><br>
+          <input type="number" id="calorias" name="calorias"
+            placeholder="Digite aqui o nº de calorias..." /><br /><br />
+          <label for="quantidade">Quantidade:</label><br>
+          <input type="number" id="quantidade" name="quantidade"
+            placeholder="Digite a quantidade aqui..." /><br /><br />
+
+          <button id="button_save" type="button" onclick="salvarInformacao()">Salvar</button>
+          <button id="button_reset" type="reset">Limpar</button>
+        </form>
+      </fieldset>
+
+    </div>
+
+    <div class="tabela_ds">
+        <table id="tabela">
+          <caption>Tabela de Alimentos</caption>
+          <tr>
+            <th>Alimento</th>
+            <th>Calorias</th>
+            <th>Gramas</th>
+            <th>Tipo</th>
+          </tr>
+        </table>
+        <button id="button_clear" type="button" onclick="deletatabela()">Apagar dados</button>
+    </div>
+
   </div>
 
-  <script>
+  <script src="./js/index.js"></script>
 
-    function salvarInformacao() {
-      // pega as do DOM do html e guarda o valor nas variaveis alimento/calorias/quantidade
-
-
-      var alimento = document.getElementById("alimento").value;
-      var calorias = document.getElementById("calorias").value;
-      var quantidade = document.getElementById("quantidade").value;
-      var tipo = document.getElementById("tipos_select").value;
-
-      //recupera la do DOM do html a tabela e guarda na variavel tabela
-
-      if (alimento !== "" && calorias !== "" && quantidade !== "") {
-        var tabela = document.getElementById("tabela");
-
-        var newRow = tabela.insertRow();
-        var cell1 = newRow.insertCell(0);
-        cell1.innerHTML = alimento;
-        var cell2 = newRow.insertCell(1);
-        cell2.innerHTML = calorias;
-        var cell3 = newRow.insertCell(2);
-        cell3.innerHTML = quantidade;
-        var cell4 = newRow.insertCell(3);
-        cell4.innerHTML = tipo;
-
-        //limpar tudo para recomeçar
-        document.getElementById("alimento").value = ""
-        document.getElementById("calorias").value = ""
-        document.getElementById("quantidade").value = ""
-      }
-
-      else {
-        alert("Preencha os campos!")
-      }
-    }
-  </script>
 </body>
 
 </html>

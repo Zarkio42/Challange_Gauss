@@ -1,0 +1,149 @@
+* {
+  color: #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f3f3f3;
+  margin: 0;
+}
+
+.header_ {
+  width: 100%;
+  height: 25%;
+  background-color: #33f18275;
+}
+
+.img_fundo {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 0 0 50px;
+}
+
+.img_fundo img {
+  width: 6%;
+  height: auto;
+}
+
+.img_fundo h1{
+  font-size: 36pt;
+  color: #fff;
+  padding: 0 0 0 15px;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing: 0;
+  border-radius: 15px;
+}
+
+table td,
+table th {
+  border-bottom: 1px solid #33333375;
+  padding: 24px;
+}
+
+table td:hover{
+  background-color: aquamarine;
+}
+
+table td{
+  cursor: pointer;
+  font-size: 16pt;
+  font-weight: 600;
+}
+
+table th{
+  background-color: rgb(45, 202, 150);
+  color: #fff;
+}
+
+#button_save {
+  font-size: 14pt;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(17, 134, 23);
+  color: #fff;
+  padding: 8px;
+  cursor: pointer;
+  margin: 5px 5px 0 0;
+}
+
+#button_reset {
+  font-size: 14pt;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(253, 0, 0);
+  padding: 8px;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px 0 0 5px;
+}
+
+input {
+  padding: 4px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: none;
+}
+
+select{
+  border: none;
+}
+
+.all_contetns {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+.forms {
+  display: flex;
+  justify-content: center;
+  padding: 0 35px 0 0;
+}
+
+.forms label, h1{
+  color: #fff;
+}
+
+.tabela_ds {
+  display: table;
+  justify-content: center;
+  padding: 0 0 0 35px;
+}
+
+#fieldset_input {
+  border-radius: 10px;
+  background-color: rgb(45, 202, 150);
+}
+
+#tipos_select {
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background-color: #fff;
+}
+
+caption{
+  border: 0px solid #fff;
+  padding: 8px;
+  font-size: 20pt;
+  font-weight: 500;
+  background-color: rgb(251 74 89);
+  color: #fff;
+}
+
+#button_clear{
+  padding: 10px;
+  margin: 20px 0 0 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 12pt;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: red;
+  color: #fff;
+}
