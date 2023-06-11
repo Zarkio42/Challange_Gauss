@@ -1,0 +1,42 @@
+body{
+    margin: 20px;
+}
+
+h1 {
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary{
+    background-color: rgb(18, 216, 18);
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: rgb(21, 177, 21);
+}
+
+.accordion{
+    margin-top: 20px;
+}
+
+#seletor-id {
+    color: brown;
+}
+
+#seletor-class {
+    color: rgb(56, 212, 9);
+}
+
+.container-link{
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+
