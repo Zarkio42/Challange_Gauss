@@ -10,10 +10,9 @@ namespace Luiz_Classes_07_05_23.Funcionarios
     {
         public string nome;
         public string especializacao;
-        public string setor;
+        public int setor;
         public int numRegistro;
-        public int salario;
-        public int mediaSalarial;
+        public double salario;
 
     }
 }
