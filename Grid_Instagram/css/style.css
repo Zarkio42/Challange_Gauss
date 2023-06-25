@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu_inicial {
+    margin: 20px 0 0 10px;
+}
+
+.menu_inicial p {
+    font-size: 14pt;
+    align-items: center;
+    margin: 0 0 0 10px;
+}
+
+.menu_inicial p::first-letter{
+    text-transform: capitalize;
+}
+
+.menu_inicial i{
+    align-items: baseline;
+    padding: 15px;
+}
+
+.menu_inicial img{
+    margin-left: 8px;
+    width: 45%;
+    height: auto;
+}
+
+.profile img{
+    text-transform: capitalize;
+    width: 8%;
+    border-radius: 100%;
+}
+
+.profile{
+    margin-top: 5px;
+    font-size: 14pt;
+}
+
+.img_story{
+    width: 200px;
+    margin: 0 10px 0 10px;
+}
+
+.img_story img{
+    width: 20%;
+    border-radius: 100%;
+}
