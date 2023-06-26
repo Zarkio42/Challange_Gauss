@@ -19,9 +19,11 @@
 
 <body>
     <div class="principal d-flex">
-        <div class="col-3 menu_inicial">
+        <div class="col-2 menu_inicial">
 
-            <img src="./image/instagram-logo-1.png" alt="instagram">
+            <div class="logo">
+                <img src="./image/instagram-logo-1.png" alt="instagram">
+            </div>
 
             <i class="bi bi-house-door-fill d-flex">
                 <p>página inicial</p>
@@ -48,34 +50,93 @@
                 <img src="./image/perfil.jpeg" alt="profile-img">
                 <p>perfil</p>
             </div>
-            <i class="bi bi-list d-flex">
-                <p>mais</p>
-            </i>
+            <div class="i-list-more">
+                <i class="bi bi-list d-flex">
+                    <p>mais</p>
+                </i>
+            </div>
         </div>
-        <div class="col-6 w-100vh">
+        <div class="col-9 w-100vh content_page">
 
-            <div class="row d-flex flex-nowrap">
-                <div class="img_story">
+            <div class="row d-flex flex-nowrap top_bar">
+                <div class="story">
                     <img src="./image/story_.png" alt="story">
+                    <span>user1</span>
                 </div>
-                <div class="img_story">
+                <div class="story">
                     <img src="./image/story_.png" alt="story">
+                    <span>user2</span>
                 </div>
-                <div class="img_story">
+                <div class="story">
                     <img src="./image/story_.png" alt="story">
+                    <span>user3</span>
                 </div>
-                <div class="img_story">
+                <div class="story">
                     <img src="./image/story_.png" alt="story">
+                    <span>user4</span>
                 </div>
-                <div class="img_story">
+                <div class="story">
                     <img src="./image/story_.png" alt="story">
+                    <span>user5</span>
+                </div>
+            </div>
+
+            <div class="post_area w-100 h-auto d-flex justify-content-center align-items-center flex-column">
+
+                <div class="feed">
+                    <div class="card1_feed">
+                        <div class="header_card w-100 d-flex">
+                            <div class="profile_area col-10 d-flex">
+                                <div class="profile_img">
+                                    <img src="./image/perfil.jpeg" alt="profile feed">
+                                </div>
+                                <div class="username_feed d-grid">
+                                    <span>Pedro Cardoso</span>
+                                    <span>☼ David Guetta</span>
+                                </div>
+                            </div>
+                            <div class="more_dots col-2 d-flex justify-content-center align-items-center">
+                                <div class="list_more_list"><i class="bi bi-three-dots"></i></div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="./image/Post_ex.png" alt="postFeed">
+                        </div>
+
+                        <div class="interact w-100 d-flex">
+                            <span><i class="bi bi-heart-fill"></i></span>
+                            <span><i class="bi bi-chat"></i></span>
+                            <span><i class="bi bi-send-fill"></i></span>
+                            <span class="d-flex justify-content-end"><i class="bi bi-bookmark-fill"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="card2_feed">
+                        <div class="header_card w-100 d-flex">
+                            <div class="profile_area col-10 d-flex">
+                                <div class="profile_img">
+                                    <img src="./image/perfil.jpeg" alt="profile feed">
+                                </div>
+                                <div class="username_feed d-grid">
+                                    <span>Pedro Cardoso</span>
+                                    <span>☼ David Guetta</span>
+                                </div>
+                            </div>
+                            <div class="more_dots col-2 d-flex justify-content-center align-items-center">
+                                <div class="list_more_list"><i class="bi bi-three-dots"></i></div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="./image/Post_ex.png" alt="postFeed">
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
 
-        <div class="col-3">
-
+        <div class="col-1">
+            <div class="container"></div>
         </div>
 
     </div>
