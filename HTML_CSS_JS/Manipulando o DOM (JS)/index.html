@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container-1">
+        <h1>Armazenando dados no LocalSottage</h1>
+        <div class="input-container">
+            <label for="titulo">Titulo:</label>
+            <input type="text" name="titulo" id="titulo">
+            <br><br>
+            <label for="description">Descrição:</label>
+            <input type="text" name="description" id="description">
+            <br><br>
+        </div>
+        <!--<button onClick="salvarDados">Salvar</button>-->
+        <div class="button-save">
+            <button id="btn">Salvar</button>
+        </div>
+    </div>
+
+    <h2>Atividades</h2>
+    <div id="dadosSalvos"></div>
+
+    <button id="modoDark" onclick="alterarModo()">Modo Noite</button>
+
+    <!--
+    <table>
+        <tr>
+            <th>Titulo</th>
+            <th>Descrição</th>
+        </tr>
+
+        <tr>
+            <td>Pedro</td>
+            <td>Chaves</td>
+        </tr>
+    </table>
+    -->
+
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
