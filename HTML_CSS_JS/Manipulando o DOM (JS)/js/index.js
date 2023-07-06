@@ -1,28 +1,38 @@
 
 const salvarBtn = document.getElementById("btn");
+const excluirCardBtn = document.getElementsByClassName("deleteBtn");
 
 salvarBtn.addEventListener("click", salvarDados, exibirDados);
+
+document.addEventListener("click", function (event) {
+    if (event.target.classList.contains("deleteBtn") || event.target.className.contains("bi bi-trash")) {
+        deleteCards(event);
+    }
+});
 
 function salvarDados() {
     let inputTitle = document.getElementById("titulo").value;
     let inputDescription = document.getElementById("description").value;
 
-    console.log(inputTitle, inputDescription);
+    if (inputTitle !== "" && inputDescription !== "") {
+        let tarefas = localStorage.getItem("tarefas");
 
-    let tarefas = localStorage.getItem("tarefas");
+        if (tarefas) {
+            tarefas = JSON.parse(tarefas);
+        }
+        else {
+            tarefas = [];
+        }
 
-    if (tarefas) {
-        tarefas = JSON.parse(tarefas);
+        tarefas.push({ titulo: inputTitle, description: inputDescription });
+        localStorage.setItem("tarefas", JSON.stringify(tarefas))
+
+        alert("Dados Salvos!");
+        exibirDados();
     }
     else {
-        tarefas = [];
+        alert("Campos Vazios!")
     }
-
-    tarefas.push({ titulo: inputTitle, description: inputDescription });
-    localStorage.setItem("tarefas", JSON.stringify(tarefas))
-
-    alert("Dados Salvos!");
-    exibirDados();
 }
 
 function exibirDados() {
@@ -34,15 +44,24 @@ function exibirDados() {
     if (tarefas) {
         tarefas = JSON.parse(tarefas);
         tarefas.forEach(function (tarefa) {
+
             let card = document.createElement("div");
             card.classList.add("card")
 
-            let tituloElement = document.createElement("p");
-            tituloElement.textContent = `Titulo: ${tarefa.titulo}`
+            let deleteElement = document.createElement("button");
+            deleteElement.classList.add("deleteBtn")
+            card.appendChild(deleteElement);
+            iconDelete = document.createElement("i");
+            iconDelete.className = "bi bi-trash";
+            //prepend adciona o item icon dentro do button.
+            deleteElement.prepend(iconDelete);
+
+            let tituloElement = document.createElement("h4");
+            tituloElement.textContent = `${tarefa.titulo}`
             card.appendChild(tituloElement);
 
             let descriptionElement = document.createElement("p");
-            descriptionElement.textContent = `Descrição: ${tarefa.description}`
+            descriptionElement.textContent = `${tarefa.description}`
             card.appendChild(descriptionElement);
 
             dadosSalvos.appendChild(card);
@@ -50,6 +69,32 @@ function exibirDados() {
     }
 
 }
+
+function deleteCards(event) {
+        let card = event.target.closest(".card");
+        if (card) {
+            card.remove();
+    
+            // Remove o card do localStorage
+            let tarefas = localStorage.getItem("tarefas");
+            if (tarefas) {
+                tarefas = JSON.parse(tarefas);
+                let titulo = card.querySelector("h4").textContent;
+                let description = card.querySelector("p").textContent;
+    
+                // Procura o índice do card a ser removido
+                let index = tarefas.findIndex(function(tarefa) {
+                    return tarefa.titulo === titulo && tarefa.description === description;
+                });
+    
+                // Remove o card do array
+                if (index !== -1) {
+                    tarefas.splice(index, 1);
+                    localStorage.setItem("tarefas", JSON.stringify(tarefas));
+                }
+            }
+        }
+    }
 
 window.addEventListener("DOMContentLoaded", exibirDados);
 
