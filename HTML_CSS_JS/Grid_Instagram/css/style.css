@@ -39,6 +39,10 @@
     color: #fff;
 }
 
+.icons-bottom-mobile{
+    display: none;
+}
+
 .i-list-more {
     display: flex;
     height: 34%;
@@ -296,6 +300,34 @@
         margin-left: 0 !important;
         margin-right: 0 !important;
         border-bottom: 1px solid rgba(54, 54, 54, 0.753);
+    }
+
+    .icons-bottom-mobile{
+        display: flex;
+        background-color: #000000;
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+    }
+
+    .container-i-b-m{
+        justify-content: space-between;
+        display: flex;
+        margin: 0 10px 0 10px;
+        width: 100%;
+    }
+
+    .icon{
+        padding: 15px 8px;
+    }
+
+    .icon a{
+        color:#fff;
+        text-decoration: none;
+    }
+
+    .icon i{
+        font-size: 14pt;
     }
 
     .menu_inicial {
