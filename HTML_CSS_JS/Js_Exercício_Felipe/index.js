@@ -1,4 +1,5 @@
 
+
 (function () {
 
     function carrinho() {
@@ -20,6 +21,13 @@
                 )
             }
             atualizarCarrinho();
+            Swal.fire({
+                position: "center",
+                icon: "success",
+                title: "Produto adcionado na sacola!",
+                showConfirmButton: false,
+                timer: 3000
+            })
         }
         function calcularTotal() {
             let total = 0;
