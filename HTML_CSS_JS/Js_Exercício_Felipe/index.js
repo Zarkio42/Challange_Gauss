@@ -20,6 +20,7 @@
                 }
                 )
             }
+            saveOnLocalStg();
             atualizarCarrinho();
             Swal.fire({
                 position: "center",
@@ -42,6 +43,9 @@
         }
         function findItemIndex(nameItem) {
             return sacola.findIndex(produto => produto.name == nameItem);
+        }
+        function saveOnLocalStg() {
+            localStorage.setItem('sacola', JSON.stringify(sacola));
         }
 
         return {
@@ -75,15 +79,29 @@
         totalCarrinhoDiv.textContent = ""
 
         let total = 0;
-        minhaSacola.getSacola().forEach(item => {
+
+        /*minhaSacola.getSacola().forEach(item => {
             total += item.price * item.amount;
             carrinhoItensDiv.innerHTML += `<div class="dropdown-item">${item.name} - Quantidade: ${item.amount} - 
         R$ ${item.price.toFixed(2)}</div>`;
         })
         totalCarrinhoDiv.textContent = `Total: R$ ${total.toFixed(2)}`
+        */
+
+        let localString = localStorage.getItem('sacola');
+        let objPessoa = JSON.parse(localString);
+        console.log(objPessoa);
+
+        objPessoa.forEach(item => {
+            total += item.price * item.amount;
+            carrinhoItensDiv.innerHTML += `<div class="dropdown-item">${item.name} - Quantidade: ${item.amount} - 
+        R$ ${item.price.toFixed(2)}</div>`
+        })
+        totalCarrinhoDiv.textContent = `Total: R$ ${total.toFixed(2)}`
+
     }
 
-}) ();
+})();
 
 
 
