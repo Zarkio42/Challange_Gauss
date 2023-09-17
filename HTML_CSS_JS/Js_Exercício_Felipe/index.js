@@ -3,7 +3,7 @@
 (function () {
 
     function carrinho() {
-        const sacola = [];
+        let sacola =  [];
 
         function addProduto(produto) {
             const index = findItemIndex(produto.name)
@@ -30,6 +30,7 @@
                 timer: 3000
             })
         }
+
         function calcularTotal() {
             let total = 0;
 
@@ -48,10 +49,24 @@
             localStorage.setItem('sacola', JSON.stringify(sacola));
         }
 
+        function isSacola() {
+            if(localStorage.getItem('sacola')){
+                const verifyStorage = localStorage.getItem('sacola');
+                const sacolaStorage = JSON.parse(verifyStorage);
+                sacola = sacolaStorage;
+            }
+
+            else{
+                sacola = [];
+            }
+            
+        }
+
         return {
             addProduto: addProduto,
             getSacola: getSacola,
             calcularTotal: calcularTotal,
+            isSacola: isSacola
         }
     }
 
@@ -74,9 +89,11 @@
     function atualizarCarrinho() {
         const carrinhoItensDiv = document.getElementById("carrinho-itens");
         const totalCarrinhoDiv = document.getElementById("total-carrinho");
+        const btnCheckout = document.getElementById("btnCheckout");
 
         carrinhoItensDiv.innerHTML = ""
         totalCarrinhoDiv.textContent = ""
+        btnCheckout.innerHTML = ""
 
         let total = 0;
 
@@ -98,8 +115,17 @@
         R$ ${item.price.toFixed(2)}</div>`
         })
         totalCarrinhoDiv.textContent = `Total: R$ ${total.toFixed(2)}`
+        btnCheckout.innerHTML = `<button type="button" class="btn btn-primary p-1">Finalizar</button>`
+        btnCheckout.addEventListener("click", (event) =>{
+            window.location.href = "./checkout.html"
+        })
 
     }
+
+    window.addEventListener('load', (event) => {
+        atualizarCarrinho();
+        minhaSacola.isSacola();
+    });
 
 })();
 
