@@ -1,8 +1,0 @@
-C:\Users\User\source\repos\Desafio de Fibonacci e Média Simples\Desafio de Fibonacci e Média Simples\bin\Debug\Desafio de Fibonacci e Média Simples.exe.config
-C:\Users\User\source\repos\Desafio de Fibonacci e Média Simples\Desafio de Fibonacci e Média Simples\bin\Debug\Desafio de Fibonacci e Média Simples.exe
-C:\Users\User\source\repos\Desafio de Fibonacci e Média Simples\Desafio de Fibonacci e Média Simples\bin\Debug\Desafio de Fibonacci e Média Simples.pdb
-C:\Users\User\source\repos\Desafio de Fibonacci e Média Simples\Desafio de Fibonacci e Média Simples\obj\Debug\Desafio de Fibonacci e Média Simples.csproj.AssemblyReference.cache
-C:\Users\User\source\repos\Desafio de Fibonacci e Média Simples\Desafio de Fibonacci e Média Simples\obj\Debug\Desafio de Fibonacci e Média Simples.csproj.SuggestedBindingRedirects.cache
-C:\Users\User\source\repos\Desafio de Fibonacci e Média Simples\Desafio de Fibonacci e Média Simples\obj\Debug\Desafio de Fibonacci e Média Simples.csproj.CoreCompileInputs.cache
-C:\Users\User\source\repos\Desafio de Fibonacci e Média Simples\Desafio de Fibonacci e Média Simples\obj\Debug\Desafio de Fibonacci e Média Simples.exe
-C:\Users\User\source\repos\Desafio de Fibonacci e Média Simples\Desafio de Fibonacci e Média Simples\obj\Debug\Desafio de Fibonacci e Média Simples.pdb
